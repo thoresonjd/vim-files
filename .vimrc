@@ -13,11 +13,17 @@ set colorcolumn=80,120
 " Tab spacing
 set tabstop=4
 
-" Backspace over start of insert, line breaks, and automatic indentation
-set backspace=start,eol,indent
+" Backspace over automatic indentation, line break, start of insert
+set backspace=indent,eol,start
 
 " Allow keys that move cursor to wrap to previous/next line
 set whichwrap+=h,l,<,>,[,]
+
+" Window title
+set title
+
+" Set title to file name
+set titlestring=%t
 
 " Enable spell check
 setlocal spell spelllang=en_us
