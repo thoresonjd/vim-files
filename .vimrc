@@ -19,6 +19,9 @@ set tabstop=4
 " Backspace over automatic indentation, line break, start of insert
 set backspace=indent,eol,start
 
+" If text extends beyond the window, do not wrap to another line
+set nowrap
+
 " Allow keys that move cursor to wrap to previous/next line
 set whichwrap+=h,l,<,>,[,]
 
@@ -33,6 +36,12 @@ set splitbelow
 
 " When splitting vertically (:vsplit), put the new window to the right of the current one
 set splitright
+
+" Collapse/fold sections of code based on syntax
+set foldmethod=syntax
+
+" Folds are unfolded by default when a file is open
+set nofoldenable
 
 " Enable spell check
 set spell
